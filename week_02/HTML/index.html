@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<!-- DOCTYPE doesn't have a closing tag at all -->
+
+<html lang="en">
+
+	<head>
+		<!-- title is required -->
+		<title> My First HTML Page </title>
+		<!-- char set should be put in too -->
+		<meta charset="UTF-8"/>
+		<meta name="description" content="This is Abhiroop's first HTML page and it is a recipe page"/>
+		<meta name="keywords" content="Recipe, Abhiroop, fun!"/>
+		<meta name="author" content="Abhiroop"/>
+		<!-- And then here you'd link to other CSS files -->
+	</head>
+
+	<body>
+
+		<!-- physical line break with an ID so that it can be grabbed later -->
+		<hr id="top">
+
+		<p>This is a page with some basic HTML elements. We will update as the tutorial progresses.</p>
+
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
+
+
+		<p>This is a paragraph</p>
+		<p>This is the next paragraph</p>
+		<p>This is the last paragraph with a <strong>bolded </strong> word</p>
+		<p> JK there is another  paragraph with an <em>italics </em> </p>
+		<p> And apparently they just really want paragraphs so here is one with <br/> a line break</p>
+		<p> This paragraph has some <small> small </small> text in it so we'll just do it</p>
+
+		<!-- ordered lists -->
+		<p> This is an ordered list </p>
+		<ol>
+			<li> List 1 </li>
+			<li> List 2 </li>
+		</ol>
+
+		<!-- unordered list -->
+		<p> This is an unordered list </p>
+		<ul>
+			<li> List 1 </li>
+			<li> List 2 </li>
+		</ul>
+
+
+
+		<!-- Image tags. Use alt for alternative text descriptions and title for image titles  -->
+		<p> Let's do images stolen from Google and then saved to computer </p>
+		<img src="data:image/jpeg;base64,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"/ alt="Baby goat pi from google image results" title="Baby goat linked">
+
+		<img src="Image/images.jpg"/ alt="goat saved to com" title="Baby goat downloaded">
+		
+
+		<!-- physical line break -->
+		<hr id="bottom">
+
+		<!-- anchor tag with a break tag-->
+		<br>
+		<a href="http://www.google.com"> This is an anchor tag and will open a link to google in the same window </a>
+		<br>
+		<a href="http://www.google.com" target="_blank"> This is an anchor tag and will open a link to google in a different window </a>
+		<br>
+		<a href="#top"> Go back to top </a>
+		<br>
+		<a href="Image/images.jpg" target="_blank"> This will link to another file inside our site/server </a>
+	
+
+	</body>
+
+</html>
