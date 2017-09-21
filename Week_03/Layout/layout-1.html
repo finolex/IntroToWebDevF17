@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout 1 headerFooterSidebar using pixels</title>
+	<style type="text/css">
+		div, header, footer, main, article, section, aside{
+			background-color: rgba(0,0,100,0.2);
+			min-height: 100px;
+		}
+
+		div.wrapper{
+			width: 900px;
+			/*center a div within the browser using margin 0 auto*/
+			margin: 0 auto;
+			float: left;
+		}
+
+		article{
+			width: 580px;
+			float: left;
+			margin: 10px;
+		}
+
+		aside {
+			width: 280px;
+			min-height: 600px;
+			float: left;
+			margin: 10px;
+
+		}
+
+		.clear{
+			clear: both;
+			height: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			a header element pretend I'm the main nav...
+		</header>
+	<main>
+		<h1>Main content section, heading elements display block</h1>
+		<article>
+			<h2>An article with 3 sections</h2>
+			<section>
+				<h3>section 1</h3>
+			</section>
+			<section>
+				<h3>section 2</h3>
+			</section>
+			<section>
+				<h3>section 3</h3>
+			</section>
+		</article>
+		<aside>
+				<h2>Sidebar</h2>
+		</aside>
+		</main>
+		<br class="clear">
+		<footer>
+			<h3>Some footer text. maybe social media links some day...</h3>
+		</footer>
+	</div>
+</body>
+</html>
