@@ -57,6 +57,17 @@
 			float: left;
 			margin-right: 550px;
 		}
+		li.clearfix::after{
+			display:block;
+			clear: both;
+			content: "";
+			/*to ensure backward compatibility*/
+			height: 0;
+			font-size: 0;
+			visibility: hidden;
+			opacity: 0;
+		}
+
 		aside{
 			width: 330px;
 			float: left;
@@ -93,8 +104,8 @@
 		</figure>
 	</article>
 	<hr>
-		<ul class="menu">
-			<h3><li>Krabby Patties</li></h3>
+		<ul class="menu" >
+			<h3><li class="clearfix">Krabby Patties</li></h3>
 				<ol>
 					<li><a href="#">Krabby Patty - $2.00</a></li>
 					<li><a href="#">Krabby Combo - $3.99</a></li>
@@ -103,7 +114,7 @@
 					<li><a href="#">Double Krabby Meal - $3.75</a></li>
 					<li><a href="#">Triple Krabby Meal - $4.00</a></li>
 				</ol>
-			<h3><li><a href="#">Drinks</a></li></h3>
+			<h3><li class="clearfix"><a href="#">Drinks</a></li></h3>
 				<ul>
 					<li><a href="#">Tea - $2.00</a></li>
 					<li><a href="#">Soda from the Sea</a></li>
@@ -119,7 +130,7 @@
 							<li><a href="#">Large - $1.50</a></li>
 						</ul>
 				</ul>
-			<h3><li><a href="#">Sides</a></li></h3>
+			<h3><li class="clearfix"><a href="#">Sides</a></li></h3>
 				<ul>
 					<li><a href="#">Seaweed Salad - $1.50</a></li>
 					<li><a href="#">Carol Bits - $1.95</a></li>

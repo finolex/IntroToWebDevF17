@@ -1,0 +1,54 @@
+/*/*/*/*universal selector*/
+
+/**{
+	margin: 0;
+	padding: 0;
+}
+*/
+/*transparent blue background, min height for all block elements to keep track of elements*/
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div,header,footer,main,article,section,aside{
+	min-height: 100px;
+	background-color: rgba(0,100,255,0.2);
+}
+
+main {
+	width: 960px;
+	margin: 0 auto;
+}
+
+use a pseudo class selector to add block empty content with 0 height and clears both sides
+Helps avoid wrapping issues when floating
+
+.clearfix::after{
+	display:block;
+	clear: both;
+	content: "";
+	/*to ensure backward compatibility*/
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+/*descendant selector for more css specificity*/
+article.col-pixels section {
+	width: 300px;
+	margin: 0 10px;
+	float: left;
+}
+
+/*descendant selector again for more specificity*/
+
+article.col-fluid section{
+	margin: 2.5%;
+	widows: 20%;
+	float: left;
+}
