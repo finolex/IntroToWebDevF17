@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+/*font-family: 'Kaushan Script', cursive;*/
+
+html{
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	/*Chrome and safari*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.container{
+	width: 900px;
+	margin:0 auto;
+}
+
+.polaroid{
+	width: 240px;
+	display: inline-block;
+}
+
+.polaroid img{
+	width: 100%;
+	height: auto;
+	border:10px solid #EEE;
+	/*border bottom will reset the other styles, so need to retype all of those too*/
+	border-bottom: 45px solid #EEE;
+}
+
+.polaroid p{
+	/*for overlapping*/
+	/*absolute means based on screen, and relative means relative to where it used to be*/
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	color: #888;
+	font-family: 'Kaushan Script', cursive;
+	bottom: 0px;
+}
