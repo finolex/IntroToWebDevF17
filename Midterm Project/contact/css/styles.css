@@ -69,3 +69,13 @@ nav a:active{
     background-color: rgba(228, 114, 151, 0.8);
     color: rgb(139,0,0);
 }
+
+/*****************
+    Body
+******************/
+
+html{
+    background: url(../img/textured_paper_@2X.png) repeat center center fixed;
+    padding: 0;
+    margin: 0;
+}

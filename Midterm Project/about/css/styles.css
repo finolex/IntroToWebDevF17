@@ -18,7 +18,7 @@ header{
     /*useful for nav bars that scroll interestingly*/
     position: fixed;
     z-index: 10;
-    background-color: rgba(228, 114, 151, 0.5);
+    background-color: rgba(228, 114, 151, 0.6);
 }
 
 header h1{
@@ -79,3 +79,9 @@ nav a:active{
 /*****************
     Body
 ******************/
+
+html{
+    background: url(../img/textured_paper_@2X.png) repeat fixed;
+    padding: 0;
+    margin: 0;
+}

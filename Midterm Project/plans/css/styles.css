@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rye');
 
+/*******************
+    Nav Bar Styles
+********************/
+
 body{
     padding: 0;
     margin: 0;
@@ -68,4 +72,38 @@ nav a:hover{
 nav a:active{
     background-color: rgba(228, 114, 151, 0.8);
     color: rgb(139,0,0);
+}
+
+/*****************
+    Body
+******************/
+
+html{
+    background: url(../img/textured_paper_@2X.png) repeat fixed;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    width: 600px;
+    margin: 200px auto;
+    padding: 0;
+    float: left;
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;
+}
+
+.basic{
+    width:400px;
+    background: rgba(202, 38, 139, 0.6);
+}
+
+div p {
+    margin: 0 auto;
+    padding: 0 auto;
+    float: center;
 }
