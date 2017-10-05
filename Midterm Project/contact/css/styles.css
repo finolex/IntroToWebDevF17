@@ -75,7 +75,112 @@ nav a:active{
 ******************/
 
 html{
-    background: url(../img/textured_paper_@2X.png) repeat center center fixed;
+    background: url(../img/textured_paper_@2X.png) repeat fixed;
     padding: 0;
     margin: 0;
+}
+
+/*****************
+    Body
+******************/
+
+html{
+    background: url(../img/textured_paper_@2X.png) repeat fixed;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 100px;
+    width: 1000px;
+    padding-top: 90px;
+}
+
+.contactCaption{
+    padding-left: 200px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+
+article li{
+    margin-top: 15px;
+}
+
+.abhi, .asam{
+    box-shadow: -10px 10px 5px #888888;
+}
+
+footer{
+    float: right;
+    padding:110px;
+    padding-right: 130px;
+    padding-bottom: 0;
+    color: darkred;
+}
+
+footer a{
+    text-decoration: underline;
+    color: darkred;
+}
+
+/*********************
+    Abhi
+**********************/
+
+.abhi{
+    width:475px;
+    background: rgba(202, 38, 139, 0.6);
+    float: left;
+}
+
+img{
+    margin: 10px;
+    margin-right: 0;
+    padding:0;
+    box-shadow: -3px 3px 5px #888888;
+}
+
+article h2{
+    margin: 25px;
+    margin-left: 30px;
+    margin-top: 25px;
+    color: rgb(253, 232, 232);
+    font-family:'Rye', sans-serif;
+    display: inline-block;
+    text-shadow: -2px 2px #888888;
+}
+
+article ul{
+    margin: 15px;
+    margin-right: 20px;
+    color: rgb(253, 232, 232);
+    font-family: sans-serif;
+    list-style-type: none;
+    font-size: 20px;
+    float: right;
+    padding: 0;
+    text-shadow: -2px 2px #888888;
+}
+
+/*********************
+    Asam
+**********************/
+
+.asam{
+    width:475px;
+    background: rgba(202, 38, 139, 0.6);
+    float: left;
+    margin-left: 33px;
+}
+
+.asamUL{
+    margin: 30px;
+    margin-right: 60px;
+    color: rgb(253, 232, 232);
+    font-family: sans-serif;
+    list-style-type: none;
+    font-size: 20px;
+    float: right;
+    padding: 0;
 }
