@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rye');
 
 html {
-    background: url(http://via.placeholder.com/1330x720) no-repeat center center fixed;
+    background: url(../img/landingPage.png) no-repeat center center fixed;
+    background-position: 0 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -35,7 +36,7 @@ header h1 a{
 nav{
     float: left;
     display: inline-block;
-    padding: 420px 0 0 830px;
+    padding: 530px 0 0 940px;
     transform: scale(1.2);
 }
 
@@ -44,14 +45,15 @@ nav ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: rgba(150,40,40, 0.2);
+    background-color: rgba(150,40,40, 0.4);
     font-family: 'Rye', sans-serif;
+    font-size: 20px;
 }
 
 nav li{
-    height: 50px;
-    line-height: 50px;
-    width: 120px;
+    height: 90px;
+    line-height: 90px;
+    width: 226px;
     display: inline-block;
 }
 
