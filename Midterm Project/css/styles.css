@@ -31,12 +31,13 @@ header h1{
 header h1 a{
     text-decoration:none;
     color: darkred;
+    padding-left: 70px;
 }
 
 nav{
     float: left;
     display: inline-block;
-    padding: 530px 0 0 940px;
+    padding: 413px 0 0 753px;
     transform: scale(1.2);
 }
 
@@ -51,9 +52,9 @@ nav ul{
 }
 
 nav li{
-    height: 90px;
-    line-height: 90px;
-    width: 226px;
+    height: 72px;
+    line-height: 72px;
+    width: 180px;
     display: inline-block;
 }
 

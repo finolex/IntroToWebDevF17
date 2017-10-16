@@ -86,35 +86,24 @@ html{
     padding: 0;
     margin: 0;
 }
-
+/*
 .wrapper{
     margin: 0 auto;
     padding: 100px;
-    width: 100%;
+    width: 1300px;
     padding-top: 90px;
-}
+}*/
 
 .plansCaption{
-    padding: 10px;
-    padding-left: 70px;
-    padding-right: 0;
     font-size: 40px;
-    float: left;
-    margin-right: 0;
+    padding-left: 25%;
+    padding-bottom: 3%;
 }
-
+/*.container{
+    padding-top: 5%;
+}*/
 article li{
-    margin-top: 15px;
-}
-
-/*********************
-    Image Styles
-**********************/
-
-img{
-    float: left;
-    padding: 50px;
-    padding-left: 20px;
+    margin-top: 50px;
 }
 
 /*********************
@@ -123,31 +112,37 @@ img{
 
 .basic{
     box-shadow: -10px 10px 5px #888888;
-    padding: 30px;
-    margin-left: 60px;
-    margin-right: 0;
-    padding-right: 0;
+    padding: 0;
+    /*margin-left: 50px;*/
+    padding-bottom: 40px;
+    margin-bottom: 5%;
     width:650px;
     height: 350px;
     background: rgba(202, 38, 139, 0.6);
-    float: left;
+/*    float: left;*/
 }
 
 article h2{
-    margin: 25px;
-    margin-left: 50px;
+    margin: 35px;
+    margin-left: 40%;
     color: rgb(253, 232, 232);
     font-family:'Rye', sans-serif;
     text-shadow: -2px 2px #888888;
 }
 
+article hr{
+    margin: 0;
+    padding: 0;
+}
+
 article ul{
-    margin: 15px 10px 15px 5px;
+    margin: 0;
     color: rgb(253, 232, 232);
     font-family: sans-serif;
     list-style-type: none;
     font-size: 20px;
     text-shadow: -2px 2px #888888;
+    margin-bottom: 50px;
 }
 
 h3{
@@ -165,3 +160,73 @@ h3 a{
     font-family: 'Rye', sans-serif;
     text-shadow: -2px 2px #888888;
 }
+
+.grid_12{
+    padding-top: 8%;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+    .scaled{
+        transform: scale(0.78);
+    }
+
+    nav li{
+        width: 120px;
+    }
+
+    article li{
+        margin-top: 5%;
+    }
+}
+
+
+
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+    .scaled{
+        transform: scale(0.78);
+    }
+
+    nav li{
+        width: 120px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .scaled{
+        transform: scale(0.5);
+    }
+
+    nav li{
+        width: 50px;
+        font-size: 15px;
+    }
+
+    article li{
+        padding-top: 10px;
+        margin: 0;
+    }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+    .scaled{
+        transform: scale(0.5);
+    }
+
+    nav li{
+        width: 50px;
+        font-size: 15px;
+    }
+
+    article li{
+        padding: 0;
+        margin: 0;
+    }
+}
+
