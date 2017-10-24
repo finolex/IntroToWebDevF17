@@ -86,28 +86,23 @@ html{
     padding: 0;
     margin: 0;
 }
-/*
-.wrapper{
-    margin: 0 auto;
-    padding: 100px;
-    width: 1300px;
-    padding-top: 90px;
-}*/
 
 .plansCaption{
     font-size: 40px;
     padding-left: 25%;
     padding-bottom: 3%;
 }
-/*.container{
+
+.container{
     padding-top: 5%;
-}*/
+}
+
 article li{
     margin-top: 50px;
 }
 
 /*********************
-         Text
+        Content
 **********************/
 
 .basic{
@@ -119,7 +114,6 @@ article li{
     width:650px;
     height: 350px;
     background: rgba(202, 38, 139, 0.6);
-/*    float: left;*/
 }
 
 article h2{
@@ -161,10 +155,47 @@ h3 a{
     text-shadow: -2px 2px #888888;
 }
 
-.grid_12{
-    padding-top: 8%;
+article{
+    display: block;
 }
 
+
+main{
+    width: 1366px;
+    margin: 0 auto;
+    font-size: 0em;
+}
+
+.grid_text{
+    width: 60%;
+    margin: 1%;
+    display: inline-block;
+}
+
+
+.grid_img{
+    width: 30%;
+    margin: 1%;
+    display: inline-block;
+}
+
+.grid_img img{
+    width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    content: '';
+    visibility: hidden;
+}
+
+/*********************
+    Media Queries
+**********************/
 
 @media only screen and (min-width: 768px) and (max-width: 995px) {
     .scaled{
