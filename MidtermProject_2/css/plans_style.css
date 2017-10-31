@@ -108,6 +108,7 @@ article li{
 
 .basic, .upgraded, .unlimited{
     box-shadow: -10px 10px 5px #888888;
+    margin-bottom: 5%;
 }
 
 .clearfix::after{
