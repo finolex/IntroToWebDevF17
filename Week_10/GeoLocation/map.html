@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 40%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+    	var map;
+    	var lat = 0;
+    	var lon = 0;
+    	var myLatLon = {};
+
+      //event delegation - wait for page to load then call our get location function
+		document.addEventListener('DOMContentLoaded', function(event){
+			getLocation();
+		});
+
+		function getLocation(){
+			//conditional statement to make sure old browsers show error
+
+			if(navigator.geolocation){
+				navigator.geolocation.getCurrentPosition(setPosition);
+			} else {
+				alert("geolocation is not supported by your browser. Please get chrome");
+			}
+
+			function setPosition(position){
+				// log out the returned data as a param or a var called position
+
+				var lat = position.coords.latitude;
+				var lon = position.coords.longitude;
+				myLatLon.lat = lat;
+				myLatLon.lon = lon;
+				initMap();
+			}
+		}
+
+		function initMap(){
+			//initialising a new google map object and passing in its center coords
+
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {
+					lat: lat,
+					lng: lon
+				},
+				zoom: 15
+			})
+
+			var marker = new google.maps.Marker({
+				position: {
+					lat: lat,
+					lng: lon
+				},
+				map: map,
+				title: 'creepymessage...'
+			})
+		}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJxuMnGFhXhGxZL-JVn5sE0tv4MDIzfY&callback=getLocation">
+    </script>
+  </body>
+</html>

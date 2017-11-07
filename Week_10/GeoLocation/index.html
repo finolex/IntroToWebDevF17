@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geolocation </title>
+	<script type="text/javascript">
+		
+		//event delegation - wait for page to load then call our get location function
+		document.addEventListener('DOMContentLoaded', function(event){
+			getLocation();
+		});
+
+		function getLocation(){
+			//conditional statement to make sure old browsers show error
+
+			if(navigator.geolocation){
+				navigator.geolocation.getCurrentPosition(setPosition);
+			} else {
+				alert("geolocation is not supported by your browser. Please get chrome");
+			}
+
+		function setPosition(position){
+			// log out the returned data as a param or a var called position
+
+			console.log(position.coords.latitude);
+			console.log(position.coords.longitude);
+
+			var loc = document.getElementById('location');
+			loc.innerHTML = 'Latitude: ' + position.coords.latitude + ' Longitude: ' + position.coords.longitude;
+		}
+		}
+	</script>
+</head>
+<body>
+
+	<div id= "location"></div>
+
+</body>
+</html>
