@@ -1,0 +1,49 @@
+/****************
+	Nav Bar
+******************/
+
+
+/*Dropdown bg color*/
+div.dropdown-menu.show{
+    background-color: #ffb3ba;
+}
+
+a.dropdown-item{
+	color: #ffffba;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+}
+
+/*Nav Bar text color*/
+.navbar-nav > li > a{
+	color: #ffffba;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+}
+
+.navbar-nav > li.active > a{
+	color: black;
+}
+
+.navbar-nav > li > a:hover{
+	color: #baffc9;
+}
+
+.navbar-nav > li.active > a:hover{
+	color: black;
+}
+
+
+/*Navbar color*/
+.navbar{
+	background-color: #ffb3ba;
+	color: white;
+}
+
+/****************
+	Body
+******************/
+
+.container-fluid{
+	background: url(../img/norwegian_rose_@2X.png) repeat fixed;
+}
