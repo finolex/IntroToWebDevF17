@@ -10,14 +10,14 @@ div.dropdown-menu.show{
 
 a.dropdown-item{
 	color: #ffffba;
-	font-family: 'Patrick Hand', cursive;
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 }
 
 /*Nav Bar text color*/
 .navbar-light .navbar-nav .nav-link{
 	color: #ffffba;
-	font-family: 'Patrick Hand', cursive;
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 }
 
@@ -53,6 +53,10 @@ body{
 
 /*container fluid padding*/
 
+.container-fluid{
+	padding-top: 100px;
+}
+
 .container{
 	padding-top: 100px;
 }
@@ -74,11 +78,11 @@ a i:hover{
 }
 
 p, h2, h3, h4, h5, h6, h1{
-	font-family:'Patrick Hand', cursive;
+	font-family: 'Roboto', sans-serif;
 }
 
 p{
-	font-size: 30px;
+	font-size: 25px;
 }
 
 h2{
@@ -99,7 +103,7 @@ h3:hover{
 
 h5{
 	padding: 20px 50px;
-	margin: 100px;
+	margin: 90px;
 }
 
 h5:hover{
