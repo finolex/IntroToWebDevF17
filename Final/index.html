@@ -25,7 +25,7 @@
   <!-- blue navbar with logo on left and nav with dropdown on the right -->
   <nav class="navbar navbar-expand-sm fixed-top navbar-light">
     <!-- brand logo. can use for an image as well -->
-    <a class="navbar-brand" href="index.html"><img src="img/AbhiLogo.jpg"></a>
+    <a class="navbar-brand" href="index.html"><img src="img/AbhiLogo.png"></a>
     <!-- insert hidden button for the hamburder on mobile devices -->
     <button 
     class="navbar-toggler" 
@@ -83,10 +83,48 @@
 
 <!-- Main Content -->
 
-	<div class="container">
-		<h2>Welcome!</h2>
-		<div>
-			<p>Cool stuff coming for landing page soon :)</p>
+	<div class="container-fluid">
+    <h1>CVK Abhiroop</h1>
+    <div class="menubar btn-group btn-group-lg">
+      <button class="btn btn-default" type="button" data-filter="all">All</button>
+      <button class="btn btn-default" type="button" data-filter=".startups">Startups</button>
+      <button class="btn btn-default" type="button" data-filter=".projects">Projects</button>
+    </div>
+		
+    <div class="container container-mix">
+  		<a href="sophire.html" class="mix startups"><img class="miximg" src="img/Sophire1.jpg"></a>
+      <a href="engage.html" class="mix startups"><img class="miximg" src="img/Engage1.jpg"></a>
+      <a href="sophire.html" class="mix startups"><img class="miximg" src="img/Sophire2.jpg"></a>
+      <a href="photography.html" class="mix projects"><img class="miximg" src="img/photo5.jpg"></a>
+      <a href="bsq.html" class="mix startups"><img class="miximg" src="img/bsq1.jpg"></a>
+      <a href="inp.html" class="mix projects"><img class="miximg" src="img/inp1.jpg"></a>
+      <a href="sophire.html" class="mix startups"><img class="miximg" src="img/Sophire3.jpg"></a>
+      <a href="photography.html" class="mix projects"><img class="miximg" src="img/photo4.jpg"></a>
+      <a href="vfs.html" class="mix projects"><img class="miximg" src="img/vfs1.jpg"></a>
+      <a href="creativecoding.html" class="mix projects"><img class="miximg" src="img/cc3.jpg"></a>
+      <a href="filmography.html" class="mix projects"><img class="miximg" src="img/film2.jpg"></a>
+      <a href="inp.html" class="mix projects"><img class="miximg" src="img/inp2.jpg"></a>
+      <a href="engage.html" class="mix startups"><img class="miximg" src="img/Engage2.jpg"></a>
+      <a href="photography.html" class="mix projects"><img class="miximg" src="img/photo6.jpg"></a>
+      <a href="photography.html" class="mix projects"><img class="miximg" src="img/photo3.jpg"></a>
+      <a href="creativecoding.html" class="mix projects"><img class="miximg" src="img/cc1.jpg"></a>
+      <a href="vfs.html" class="mix projects"><img class="miximg" src="img/vfs3.jpg"></a>
+      <a href="photography.html" class="mix projects"><img class="miximg" src="img/photo2.jpg"></a>
+      <a href="filmography.html" class="mix projects"><img class="miximg" src="img/film1.jpg"></a>
+      <a href="research.html" class="mix projects"><img class="miximg" src="img/research2.jpg"></a>
+      <a href="photography.html" class="mix projects"><img class="miximg" src="img/photo7.jpg"></a>
+      <a href="creativecoding.html" class="mix projects"><img class="miximg" src="img/cc2.jpg"></a>
+      <a href="engage.html" class="mix startups"><img class="miximg" src="img/Engage3.jpg"></a>
+      <a href="bsq.html" class="mix startups"><img class="miximg" src="img/bsq3.jpg"></a>
+      <a href="vr.html" class="mix projects"><img class="miximg" src="img/vr1.jpg"></a>
+      <a href="inp.html" class="mix projects"><img class="miximg" src="img/inp3.jpg"></a>
+      <a href="filmography.html" class="mix projects"><img class="miximg" src="img/film3.jpg"></a>
+      <a href="research.html" class="mix projects"><img class="miximg" src="img/research1.jpg"></a>
+      <a href="bsq.html" class="mix startups"><img class="miximg" src="img/bsq2.jpg"></a>
+      <a href="photography.html" class="mix projects"><img class="miximg" src="img/photo1.jpg"></a>
+      <a href="vfs.html" class="mix projects"><img class="miximg" src="img/vfs2.jpg"></a>
+      <a href="photography.html" class="mix projects"><img class="miximg" src="img/photo8.jpg"></a>
+    </div>
 	</div>
 
 
@@ -96,5 +134,19 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script type="text/javascript">
+      var mixer = mixitup('.container-mix');
+      var mixer = mixitup(containerEl);
+
+      var mixer = mixitup(containerEl, {
+          selectors: {
+              target: '.blog-item'
+          },
+          animation: {
+              duration: 300
+          }
+      });
+    </script>
   </body>
 </html>
